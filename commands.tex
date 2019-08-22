@@ -21,7 +21,16 @@
     #1
 }
 
-%% Separator line between the header and the resume.
+% Separator line between the header and the resume.
 \newcommand{\separator}[0]{
     \rule{13.75cm}{1mm} %}
+}
+
+% Year inclusion with a line break.
+% @param range      The year in which the activity took part in.
+\newcommand{\yearbreak}[1]{
+    \hfill
+    #1
+    \hspace{14.25mm}
+    \\
 }
