@@ -1,0 +1,25 @@
+%% Document Commands
+% Raise an image's position to match the center of text.
+% @param scale      The scale for this image.
+% @param filename   The filename for this image.
+\newcommand{\raiseimage}[2]{
+    \raisebox{-0.35\height}{\includegraphics[scale=#1]{#2}}
+}
+% Present social information using an image.
+% @param value      The value for this social gateway.
+\newcommand{\github}[1]{
+    \raiseimage{0.050}{./images/mark-github.png}
+    \href{http://www.github.com/#1}{github.com/#1}
+}
+\newcommand{\mail}[1]{
+    \raiseimage{0.050}{./images/mail.png}
+    \href{mailto://#1}{#1}
+}
+\newcommand{\mobile}[1]{
+    \raiseimage{0.030}{./images/device-mobile.png}
+    #1
+}
+\newcommand{\location}[1]{
+    \raiseimage{0.050}{./images/location.png}
+    #1
+}
