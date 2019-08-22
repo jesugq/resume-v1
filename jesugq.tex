@@ -1,7 +1,42 @@
+%% Document Packages
 \documentclass{res}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{helvetica}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{mwe}
 
+%% Document Properties
+\setlength{\textheight}{\textwidth}
+\hypersetup{colorlinks=true, urlcolor=gray}
+
+%% Document Commands
+% Raise an image's position to match the center of text.
+% @param scale      The scale for this image.
+% @param filename   The filename for this image.
+\newcommand{\raiseimage}[2]{
+    \raisebox{-0.35\height}{\includegraphics[scale=#1]{#2}}
+}
+% Present social information using an image.
+% @param value      The value for this social gateway.
+\newcommand{\github}[1]{
+    \raiseimage{0.075}{./images/mark-github.png}
+    \href{http://www.github.com/#1}{#1}
+}
+\newcommand{\mail}[1]{
+    \raiseimage{0.075}{./images/mail.png}
+    \href{mailto://#1}{#1}
+}
+\newcommand{\mobile}[1]{
+    \raiseimage{0.050}{./images/device-mobile.png}
+    #1
+}
+
+%% Document Content
 \begin{document}
-    
-Hello World.
+
+Hello World
 
 \end{document}
