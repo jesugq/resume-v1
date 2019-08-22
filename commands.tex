@@ -5,6 +5,7 @@
 \newcommand{\raiseimage}[2]{
     \raisebox{-0.35\height}{\includegraphics[scale=#1]{#2}}
 }
+
 % Present social information using an image.
 % @param value      The value for this social gateway.
 \newcommand{\github}[1]{
@@ -19,6 +20,8 @@
     \raiseimage{0.030}{./images/device-mobile.png}
     #1
 }
+
+%% Separator line between the header and the resume.
 \newcommand{\separator}[0]{
     \raisebox{3\height}{\rule{13.75cm}{1mm}}
     \\
