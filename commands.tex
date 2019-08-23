@@ -9,15 +9,15 @@
 % Present social information using an image.
 % @param value      The value for this social gateway.
 \newcommand{\github}[1]{
-    \raiseimage{0.050}{./images/mark-github.png}
+    \raiseimage{0.030}{./images/mark-github.png}
     \href{http://www.github.com/#1}{github.com/#1}
 }
 \newcommand{\mail}[1]{
-    \raiseimage{0.050}{./images/mail.png}
+    \raiseimage{0.030}{./images/mail.png}
     \href{mailto://#1}{#1}
 }
 \newcommand{\mobile}[1]{
-    \raiseimage{0.030}{./images/device-mobile.png}
+    \raiseimage{0.015}{./images/device-mobile.png}
     #1
 }
 
@@ -35,8 +35,8 @@
 }
 
 %% Add a little more vertical space.
-\newcommand{\jump}[0]{
-    \vspace{1mm}
+\newcommand{\jump}[1]{
+    \vspace{#1mm}
 }
 \newcommand{\longjump}[0]{
     \vspace{5mm}
