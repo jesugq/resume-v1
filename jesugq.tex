@@ -4,6 +4,7 @@
 \usepackage[english]{babel}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{tabularx}
 \usepackage{xcolor}
 \usepackage{mwe}
 \include{commands}
@@ -11,7 +12,9 @@
 %% Document Properties
 \hypersetup{colorlinks=true, urlcolor=gray}
 \renewcommand\labelitemi{\guillemotright}
-\setlength{\textheight}{\textwidth}
+\renewcommand{\arraystretch}{0}
+\newcolumntype{B}{X}
+\newcolumntype{S}{>{\hsize=.3\hsize}X}
 \begin{document}
 
 %% Document Header
@@ -63,6 +66,26 @@
     \begin{itemize}
         \item Monitoreo de estudiantes durante su aprendizaje de Microsoft Word y Excel.
     \end{itemize}
+
+    \longjump
+
+    \section{\large{COMPETENCIAS}} \jump\jump\jump
+    \begin{tabularx}{15cm}{SB}
+        \rightline{\textbf{Programación}} &
+        Java, C, Javascript, CSS, Typescript
+        \\
+        \rightline{\textbf{Frontend y Backend}} &
+        AngularJS, Firebase, Spring Boot
+        \\
+        \rightline{\textbf{Bases de Datos}} &
+        MySQL, Cisco IOS
+        \\
+        \rightline{\textbf{Línea de Comando}} &
+        Git, Bash / Shell, Npm
+        \\
+        \rightline{\textbf{IDEs y Desarollo}} &
+        VSCode, NetBeans, Eclipse, Android Studio, XCode
+    \end{tabularx}
 \end{resume}
 
 \end{document}
